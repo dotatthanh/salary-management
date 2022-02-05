@@ -87,13 +87,13 @@
                     </div>  
                     <div class="col-xl-8">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <div class="card mini-stats-wid">
                                     <div class="card-body">
                                         <div class="media">
                                             <div class="media-body">
-                                                <p class="text-muted font-weight-medium">Giấy khám bệnh</p>
-                                                <h4 class="mb-0">{{ $health_certification }}</h4>
+                                                <p class="text-muted font-weight-medium">Tổng số nhân viên</p>
+                                                <h4 class="mb-0">{{ $count_users }}</h4>
                                             </div>
 
                                             <div class="mini-stat-icon avatar-sm rounded-circle bg-primary align-self-center">
@@ -105,36 +105,18 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <div class="card mini-stats-wid">
                                     <div class="card-body">
                                         <div class="media">
                                             <div class="media-body">
-                                                <p class="text-muted font-weight-medium">Phiếu dịch vụ</p>
-                                                <h4 class="mb-0">{{ $service_voucher }}</h4>
+                                                <p class="text-muted font-weight-medium">Lương tháng này</p>
+                                                <h4 class="mb-0">{{ $total_salary }}</h4>
                                             </div>
 
                                             <div class="avatar-sm rounded-circle bg-primary align-self-center mini-stat-icon">
                                                 <span class="avatar-title rounded-circle bg-primary">
                                                     <i class="bx bx-archive-in font-size-24"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card mini-stats-wid">
-                                    <div class="card-body">
-                                        <div class="media">
-                                            <div class="media-body">
-                                                <p class="text-muted font-weight-medium">Đơn thuốc</p>
-                                                <h4 class="mb-0">{{ $prescription }}</h4>
-                                            </div>
-
-                                            <div class="avatar-sm rounded-circle bg-primary align-self-center mini-stat-icon">
-                                                <span class="avatar-title rounded-circle bg-primary">
-                                                    <i class="bx bx-purchase-tag-alt font-size-24"></i>
                                                 </span>
                                             </div>
                                         </div>

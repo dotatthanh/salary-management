@@ -3,22 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\HealthCertification;
-use App\Models\ServiceVoucher;
-use App\Models\Prescription;
+use App\Models\User;
+use App\Models\Salary;
 
 class DashboardController extends Controller
 {
     public function index()
     {
-    	$health_certification = HealthCertification::whereMonth('created_at', date('m'))->count();
-    	$service_voucher = ServiceVoucher::whereMonth('created_at', date('m'))->count();
-    	$prescription = Prescription::whereMonth('created_at', date('m'))->count();
+    	$count_users = User::count();
+    	$total_salary = Salary::where('month', date('m'))->orWhere('month', date('Y'))->count();
 
     	$data = [
-    		'health_certification' => $health_certification,
-    		'service_voucher' => $service_voucher,
-    		'prescription' => $prescription,
+    		'count_users' => $count_users,
+    		'total_salary' => $total_salary,
     	];
 
     	return view('dashboard', $data);
